@@ -1,35 +1,45 @@
-NAME
-    Log::Any::Adapter::Test::More - Output Log::Any logs as Test::More
-    diagnostics
+=pod
 
-SYNOPSIS
-        use Log::Any::Adapter;
+=head1 NAME
 
-        Log::Any::Adapter->set( 'Test::More', level => 'info' );
+Log::Any::Adapter::Test::More - Output Log::Any logs as Test::More diagnostics
 
-DESCRIPTION
-    This Log::Any adapter uses Test::More diagnostics for logging.
+=head1 SYNOPSIS
 
-LOG LEVEL TRANSLATION
-    Log levels are translated from Log::Any to Test::More as follows:
+    use Log::Any::Adapter;
 
-        trace, debug, info, notice                 => note
-        warning, error, critical, alert, emergency => diag
+    Log::Any::Adapter->set( 'Test::More', level => 'info' );
 
-LOG LEVEL LIMITING
-    You can set the log level to limit output. Default is trace.
 
-        Log::Any::Adapter->set( 'Test::More', level => 'debug' );
+=head1 DESCRIPTION
 
-SEE ALSO
-    Log::Any, Log::Any::Adapter
+This Log::Any adapter uses L<Test::More|Test::More> diagnostics for logging.
 
-AUTHOR
-    Hugh Gallagher
+=head1 LOG LEVEL TRANSLATION
 
-COPYRIGHT & LICENSE
-    Copyright (C) 2013 Hugh Gallagher, all rights reserved.
+Log levels are translated from Log::Any to Test::More as follows:
 
-    This program is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself.
+    trace, debug, info, notice                 => note
+    warning, error, critical, alert, emergency => diag
+
+=head1 LOG LEVEL LIMITING
+
+You can set the log level to limit output. Default is trace.
+
+    Log::Any::Adapter->set( 'Test::More', level => 'debug' );
+
+=head1 SEE ALSO
+
+L<Log::Any|Log::Any>, L<Log::Any::Adapter|Log::Any::Adapter>
+
+=head1 AUTHOR
+
+Hugh Gallagher 
+
+=head1 COPYRIGHT & LICENSE
+
+Copyright (C) 2013 Hugh Gallagher, all rights reserved.
+
+This program is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
