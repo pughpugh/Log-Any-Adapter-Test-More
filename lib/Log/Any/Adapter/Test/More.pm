@@ -50,7 +50,7 @@ __END__
 
 =head1 NAME
 
-Log::Any::Adapter::Test::More
+Log::Any::Adapter::Test::More - Output Log::Any logs as Test::More diagnostics
 
 =head1 SYNOPSIS
 
