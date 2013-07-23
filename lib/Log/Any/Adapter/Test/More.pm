@@ -78,7 +78,7 @@ You can set the log level to limit output. Default is trace.
 
 =head1 SEE ALSO
 
-L<Log::Any|Log::Any>, L<Log::Any::Adapter|Log::Any::Adapter>,
+L<Log::Any|Log::Any>, L<Log::Any::Adapter|Log::Any::Adapter>
 
 =head1 AUTHOR
 

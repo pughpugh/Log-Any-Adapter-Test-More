@@ -1,0 +1,35 @@
+NAME
+    Log::Any::Adapter::Test::More - Output Log::Any logs as Test::More
+    diagnostics
+
+SYNOPSIS
+        use Log::Any::Adapter;
+
+        Log::Any::Adapter->set( 'Test::More', level => 'info' );
+
+DESCRIPTION
+    This Log::Any adapter uses Test::More diagnostics for logging.
+
+LOG LEVEL TRANSLATION
+    Log levels are translated from Log::Any to Test::More as follows:
+
+        trace, debug, info, notice                 => note
+        warning, error, critical, alert, emergency => diag
+
+LOG LEVEL LIMITING
+    You can set the log level to limit output. Default is trace.
+
+        Log::Any::Adapter->set( 'Test::More', level => 'debug' );
+
+SEE ALSO
+    Log::Any, Log::Any::Adapter
+
+AUTHOR
+    Hugh Gallagher
+
+COPYRIGHT & LICENSE
+    Copyright (C) 2013 Hugh Gallagher, all rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
