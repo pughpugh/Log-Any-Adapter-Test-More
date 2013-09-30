@@ -6,7 +6,7 @@ Log::Any::Adapter::Test::More - Output Log::Any logs as Test::More diagnostics
 
 =head1 SYNOPSIS
 
-    use Log::Any::Adapter;
+    use Log::Any::Adapter; 
 
     Log::Any::Adapter->set( 'Test::More', level => 'info' );
 
